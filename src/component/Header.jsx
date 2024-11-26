@@ -18,7 +18,7 @@ const Header = () => {
 
     const search = async (city) =>{
            try {
-            const url = `http://api.weatherapi.com/v1/forecast.json?key=8e4959e6a9a248e5921141225242311&q=${city}&days=10&aqi=no&alerts=no`
+            const url = `https://api.weatherapi.com/v1/forecast.json?key=8e4959e6a9a248e5921141225242311&q=${city}&days=10&aqi=no&alerts=no`
             const res = await fetch(url)
             const data = await res.json()
             console.log(data)
