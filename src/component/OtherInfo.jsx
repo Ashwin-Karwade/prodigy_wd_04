@@ -2,6 +2,7 @@ import { LiaTemperatureHighSolid } from "react-icons/lia"
 import { LuDroplets, LuWind } from "react-icons/lu"
 import { MdVisibility } from "react-icons/md"
 import { PiSunFill } from "react-icons/pi"
+import { MdOutlineTireRepair } from "react-icons/md"
 
 
 
@@ -37,7 +38,7 @@ const OtherInfo = ({ uv , feels_like, humidity, se_wind, air_pressure, visibilit
                 <h2 className="text-2xl ml-2 font-bold">{se_wind} <span className="text-[16px]">mi/h</span></h2>
             </div>
             <div className="border-2 h-32 w-36 rounded-lg  py-4 px-3 bg-white/10 text-white hover:bg-[#d18c8c] " >
-                <PiSunFill className="size-9 text-[#f08718]"/>
+                <MdOutlineTireRepair  className="size-9 text-[#f08718]"/>
                 <h3 className="text-[14px] text-[#21d8a3] font-semibold ml-2">Air pressure</h3>
                 <h2 className="text-2xl ml-2 font-bold">{air_pressure}<span className="text-[16px]">hPa</span></h2>
             </div>

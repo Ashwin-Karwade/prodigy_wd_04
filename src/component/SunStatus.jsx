@@ -6,10 +6,10 @@ const SunStatus = ({whetherdata}) => {
   return (
     <div>
         <div className="flex justify-center items-center">
-         <div className="mt-8 border-2 border-black rounded-xl h-48 w-[90%] sm:w-[70%] lg:w-[50%] mx-auto text-white py-3 px-6 flex justify-evenly gap-3 bg-blue-950">
+         <div className="mt-8 border-2 border-black rounded-xl h-48 w-[90%] sm:w-[70%] lg:w-[50%] mx-auto text-white py-6 px-6 flex justify-evenly gap-3 bg-blue-950">
             <div className="flex flex-col justify-center gap-5 items-center ">
                <div>
-                 <GiSunrise className="size-10 text-yellow-200"/>
+                 <GiSunrise className="sm:size-8 size-7 text-yellow-200"/>
                  <h3 className="text-white font-bold font-sans">Sunrise</h3>
                </div>
                 <h1 className="text-[18px] font-semibold">{whetherdata.sunrise}</h1>
@@ -21,10 +21,10 @@ const SunStatus = ({whetherdata}) => {
             </div>
             <div className="flex flex-col justify-center items-center gap-5">
               <div>
-                <GiSunset className="size-10 text-yellow-200"/>
+                <GiSunset className="sm:size-10 size-8 text-yellow-200"/>
                 <h3 className="text-white font-bold font-sans">Sunset</h3>
               </div>
-                <h1 >{whetherdata.sunset}</h1>
+                <h1 className="text[18px] font-semibold" >{whetherdata.sunset}</h1>
             </div>
         </div>
      </div>

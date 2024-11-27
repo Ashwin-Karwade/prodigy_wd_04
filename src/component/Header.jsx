@@ -54,16 +54,16 @@ const Header = () => {
   return (
     
     <div >
-        <div className="flex justify-around items-center bg-black  w-full h-24 sticky top-0 pr-10 pl-5 ">
-            <h1 className="sm:text-4xl text-2xl font-bold font-sans tracking-wide text-yellow-400">Whether <span className="text-white">Forecast</span> </h1>
-            <div className="h-11 w-96 rounded-lg px-3 py-4 flex gap-4 items-center bg-white">
+        <div className="flex justify-around items-center bg-black gap-5  w-full h-24 sticky top-0 pr-10 pl-5 ">
+            <h1 className="sm:text-4xl text-lg font-bold font-sans tracking-wide text-yellow-400">Whether <span className="text-white">Forecast</span> </h1>
+            <div className="sm:h-11 h-9 sm:w-96 w-60 rounded-lg px-3 py-4 flex gap-4 items-center bg-white">
                 <input onChange={handleCity} value={city} className="text-[18px] text-blue-700  w-full  outline-none tracking-wider" type="text" placeholder="Search..." />
                 <RiSearch2Line className="text-[25px] text-blue-950 opacity-60"/>
             </div>
             <div className="flex sm:gap-6 gap-3 bg-black/80 px-2 rounded-lg  justify-evenly items-center" >
-                <img className="sm:size-12 size-6 rounded-full hover:size-20" src="/public/summer-season.jpg" alt=""/>
-                <img className="sm:size-12 size-6 rounded-full hover:size-20"  src="/public/winter-season.jpg" alt=""/>
-                <img className="sm:size-12 size-6 rounded-full hover:size-20" src="/public/rainee-season.jpg" alt=""/>
+                <img className="sm:size-12 size-6 rounded-full hover:size-20" src="https://c4.wallpaperflare.com/wallpaper/19/844/841/sunset-nature-summer-nature-seasons-hd-art-wallpaper-preview.jpg" alt=""/>
+                <img className="sm:size-12 size-6 rounded-full hover:size-20"  src="https://png.pngtree.com/thumb_back/fw800/background/20230929/pngtree-snowman-of-christmas-hd-wallpaper-image_13333739.jpg" alt=""/>
+                <img className="sm:size-12 size-6 rounded-full hover:size-20" src="https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-downpour-on-brooding-clouds-a-rainy-season-s-fury-captured-in-image_3763090.jpg" alt=""/>
             </div>
         </div>
         <Middle city={city} whetherdata={whetherdata}/>
